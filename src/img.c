@@ -39,7 +39,7 @@ int main(const int argc, char** argv) {
         img image = run_codec(data, length, default_codec);
         free(data);
         char* pixel_data = calloc(1, (image.metadata.width * image.metadata.height) * 4);
-        mcimg_to_raw_data(image, pixel_data);
+        img_to_raw_data(image, pixel_data);
         stbi_write_png(argv[3], image.metadata.width, image.metadata.height, 4, pixel_data, 4);
         printf(PREFIX "converted image successfully\n");
     } else {

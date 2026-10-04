@@ -2,7 +2,7 @@
 
 #include "types.h"
 
-void mcimg_to_raw_data(img img, char* dest) {
+void img_to_raw_data(img img, char* dest) {
     const size_t max = (img.metadata.width * img.metadata.height) * 4;
     size_t pixel_index = 0;
     for (size_t i = 0; i < max; i++) {

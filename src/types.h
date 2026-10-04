@@ -2,7 +2,7 @@
 
 #include <stdint.h>
 #define VERSION "2.0-alpha"
-#define PREFIX "mcimg: "
+#define PREFIX "img: "
 
 #define ALPHA_FLAG       0b0000000000000001
 #define LEGACY_SIZE_FLAG 0b0000000000000010
